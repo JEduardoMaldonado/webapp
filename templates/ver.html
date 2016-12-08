@@ -1,0 +1,56 @@
+$def with (result)
+
+<html>
+<head>   
+    
+    <link href="../static/css/estilo6.css" media="screen" rel="StyleSheet" type="text/css">
+    <title>Ver</title>
+</head>
+
+    <body class="body">
+        <form name="main" method="post" class="form"> 
+        $for row in result:
+        
+        <center>
+            <h1 style="bold" aria-setsize="15px"><font size="15px" color= "white">$row.articulo</font></h1>
+        </center>
+        
+              <center>
+            
+            <h1>
+
+
+            </h1>
+            <table CELLSPACING="10" WIDTH="400"  >
+                <TH COLSPAN=2 BGCOLOR="#6D8FFF" > Datos del Articulo </TH>
+                <tr>
+                    <td > Articulo  </td>
+                <td>$row.articulo</td>
+                </tr>
+                <tr>
+                    <td>Existencia</td>
+                <td>$row.existencia</td>
+                </tr>
+                <tr>
+                    <td>Marca</td>
+                <td>$row.marca</td>
+                </tr>
+                <tr>
+                    <td>Precio Neto</font> </td>
+                <td>$row.precioneto</font></td>
+                </tr>
+                <tr>
+                    <td>Precio Venta </td>
+                <td>$row.precioventa</td>
+                </tr>
+                <tr>
+                    <td>Ganancia </td>
+                <td>$row.ganancia</td>
+                </tr>
+                
+            </table>
+      </center>
+        
+        </form>
+</body>
+</html>
